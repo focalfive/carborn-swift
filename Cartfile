@@ -1,0 +1,10 @@
+github "ReactiveX/RxSwift" ~> 4.0
+github "ReSwift/ReSwift"
+github "realm/realm-cocoa"
+github "Alamofire/Alamofire"
+github "SnapKit/SnapKit"
+github "SwiftyJSON/SwiftyJSON"
+github "Hearst-DD/ObjectMapper"
+github "onevcat/Kingfisher"
+
+binary "https://dl.google.com/dl/firebase/ios/carthage/FirebaseDatabaseBinary.json"
