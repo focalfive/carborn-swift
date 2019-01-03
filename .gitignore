@@ -1,5 +1,6 @@
-# Created by https://www.gitignore.io/api/xcode,swift,carthage
-# Edit at https://www.gitignore.io/?templates=xcode,swift,carthage
+
+# Created by https://www.gitignore.io/api/xcode,swift,carthage,cocoapods
+# Edit at https://www.gitignore.io/?templates=xcode,swift,carthage,cocoapods
 
 ### Carthage ###
 # Carthage
@@ -8,6 +9,14 @@
 # Carthage/Checkouts
 
 Carthage/Build
+
+### CocoaPods ###
+## CocoaPods GitIgnore Template
+
+# CocoaPods - Only use to conserve bandwidth / Save time on Pushing
+#           - Also handy if you have a large number of dependant pods
+#           - AS PER https://guides.cocoapods.org/using/using-cocoapods.html NEVER IGNORE THE LOCK FILE
+Pods/
 
 ### Swift ###
 # Xcode
@@ -107,4 +116,4 @@ iOSInjectionProject/
 /*.gcno
 **/xcshareddata/WorkspaceSettings.xcsettings
 
-# End of https://www.gitignore.io/api/xcode,swift,carthage
+# End of https://www.gitignore.io/api/xcode,swift,carthage,cocoapods
