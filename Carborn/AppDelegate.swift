@@ -7,15 +7,26 @@
 //
 
 import UIKit
+import ReSwift
+import Firebase
+
+let mainStore = Store<AppState>(
+    reducer: mainReducer,
+    state: nil
+)
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        FirebaseApp.configure()
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.rootViewController = RootController()
+        window?.makeKeyAndVisible()
+        
         return true
     }
 

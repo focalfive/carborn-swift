@@ -8,8 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		51135A0237EAD6238D1F943E /* Pods_CarbornTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB9E04CB2DC47EA1FEA30FD7 /* Pods_CarbornTests.framework */; };
+		653C66F121DFB8750096C3F3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 653C66F021DFB8740096C3F3 /* GoogleService-Info.plist */; };
+		653C66F621DFC2BE0096C3F3 /* BrandService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653C66F521DFC2BE0096C3F3 /* BrandService.swift */; };
+		653C66F821DFC37C0096C3F3 /* CarService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653C66F721DFC37C0096C3F3 /* CarService.swift */; };
+		653C66FA21DFC5210096C3F3 /* Brand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653C66F921DFC5210096C3F3 /* Brand.swift */; };
 		659601E021DD15A2009780E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659601DF21DD15A2009780E5 /* AppDelegate.swift */; };
-		659601E221DD15A2009780E5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659601E121DD15A2009780E5 /* ViewController.swift */; };
 		659601E721DD15A3009780E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 659601E621DD15A3009780E5 /* Assets.xcassets */; };
 		659601EA21DD15A3009780E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 659601E821DD15A3009780E5 /* LaunchScreen.storyboard */; };
 		659601F521DD15A4009780E5 /* CarbornTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659601F421DD15A4009780E5 /* CarbornTests.swift */; };
@@ -31,6 +34,13 @@
 		65D1E2F821DE69A900FBA95D /* RxAtomic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65D1E2E721DE69A900FBA95D /* RxAtomic.framework */; };
 		65D1E2F921DE69A900FBA95D /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65D1E2E821DE69A900FBA95D /* RxSwift.framework */; };
 		65D1E2FA21DE69A900FBA95D /* ReactiveMoya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65D1E2E921DE69A900FBA95D /* ReactiveMoya.framework */; };
+		65D1E30221DFA85D00FBA95D /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D1E30121DFA85D00FBA95D /* AppState.swift */; };
+		65D1E30421DFA8E200FBA95D /* NavigationState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D1E30321DFA8E200FBA95D /* NavigationState.swift */; };
+		65D1E30621DFA97900FBA95D /* MainReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D1E30521DFA97900FBA95D /* MainReducer.swift */; };
+		65D1E30821DFAA4200FBA95D /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D1E30721DFAA4200FBA95D /* Action.swift */; };
+		65D1E30A21DFAC4E00FBA95D /* NavigationReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D1E30921DFAC4E00FBA95D /* NavigationReducer.swift */; };
+		65D1E30C21DFAE6D00FBA95D /* RootController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D1E30B21DFAE6D00FBA95D /* RootController.swift */; };
+		65D1E30E21DFB29900FBA95D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D1E30D21DFB29900FBA95D /* MainViewController.swift */; };
 		CCFC1EB9C104262B3FF0FC6D /* Pods_CarbornUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB99109FF0BECE71834A05EB /* Pods_CarbornUITests.framework */; };
 		F273E12E51462E05EF44AFA9 /* Pods_Carborn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41630127CB00C147EE816AF5 /* Pods_Carborn.framework */; };
 /* End PBXBuildFile section */
@@ -57,9 +67,12 @@
 		36FE33982ADFE3CA3AD1DDBA /* Pods-CarbornTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarbornTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CarbornTests/Pods-CarbornTests.debug.xcconfig"; sourceTree = "<group>"; };
 		41630127CB00C147EE816AF5 /* Pods_Carborn.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Carborn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		476D85F1072EA7B59B9ED831 /* Pods-CarbornUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarbornUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CarbornUITests/Pods-CarbornUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		653C66F021DFB8740096C3F3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		653C66F521DFC2BE0096C3F3 /* BrandService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandService.swift; sourceTree = "<group>"; };
+		653C66F721DFC37C0096C3F3 /* CarService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarService.swift; sourceTree = "<group>"; };
+		653C66F921DFC5210096C3F3 /* Brand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brand.swift; sourceTree = "<group>"; };
 		659601DC21DD15A2009780E5 /* Carborn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Carborn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		659601DF21DD15A2009780E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		659601E121DD15A2009780E5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		659601E621DD15A3009780E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		659601E921DD15A3009780E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		659601EB21DD15A3009780E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -86,6 +99,13 @@
 		65D1E2E721DE69A900FBA95D /* RxAtomic.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxAtomic.framework; path = Carthage/Build/iOS/RxAtomic.framework; sourceTree = "<group>"; };
 		65D1E2E821DE69A900FBA95D /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 		65D1E2E921DE69A900FBA95D /* ReactiveMoya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveMoya.framework; path = Carthage/Build/iOS/ReactiveMoya.framework; sourceTree = "<group>"; };
+		65D1E30121DFA85D00FBA95D /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		65D1E30321DFA8E200FBA95D /* NavigationState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationState.swift; sourceTree = "<group>"; };
+		65D1E30521DFA97900FBA95D /* MainReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainReducer.swift; sourceTree = "<group>"; };
+		65D1E30721DFAA4200FBA95D /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
+		65D1E30921DFAC4E00FBA95D /* NavigationReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationReducer.swift; sourceTree = "<group>"; };
+		65D1E30B21DFAE6D00FBA95D /* RootController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootController.swift; sourceTree = "<group>"; };
+		65D1E30D21DFB29900FBA95D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		AA369A13B4BD0D4665A8757E /* Pods-Carborn.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Carborn.release.xcconfig"; path = "Pods/Target Support Files/Pods-Carborn/Pods-Carborn.release.xcconfig"; sourceTree = "<group>"; };
 		DB99109FF0BECE71834A05EB /* Pods_CarbornUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CarbornUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBBDFBD8AE7FE2DE2B72462F /* Pods-Carborn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Carborn.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Carborn/Pods-Carborn.debug.xcconfig"; sourceTree = "<group>"; };
@@ -138,6 +158,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		653C66F221DFBC0C0096C3F3 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				653C66F521DFC2BE0096C3F3 /* BrandService.swift */,
+				653C66F721DFC37C0096C3F3 /* CarService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		659601D321DD15A1009780E5 = {
 			isa = PBXGroup;
 			children = (
@@ -163,11 +192,18 @@
 		659601DE21DD15A2009780E5 /* Carborn */ = {
 			isa = PBXGroup;
 			children = (
+				653C66F221DFBC0C0096C3F3 /* Services */,
+				65D1E2FC21DFA85100FBA95D /* Actions */,
+				65D1E30021DFA85100FBA95D /* Models */,
+				65D1E2FB21DFA85100FBA95D /* Reducers */,
+				65D1E2FD21DFA85100FBA95D /* States */,
+				65D1E2FE21DFA85100FBA95D /* ViewControllers */,
+				65D1E2FF21DFA85100FBA95D /* Views */,
 				659601DF21DD15A2009780E5 /* AppDelegate.swift */,
-				659601E121DD15A2009780E5 /* ViewController.swift */,
 				659601E621DD15A3009780E5 /* Assets.xcassets */,
 				659601E821DD15A3009780E5 /* LaunchScreen.storyboard */,
 				659601EB21DD15A3009780E5 /* Info.plist */,
+				653C66F021DFB8740096C3F3 /* GoogleService-Info.plist */,
 			);
 			path = Carborn;
 			sourceTree = "<group>";
@@ -188,6 +224,56 @@
 				6596020121DD15A4009780E5 /* Info.plist */,
 			);
 			path = CarbornUITests;
+			sourceTree = "<group>";
+		};
+		65D1E2FB21DFA85100FBA95D /* Reducers */ = {
+			isa = PBXGroup;
+			children = (
+				65D1E30521DFA97900FBA95D /* MainReducer.swift */,
+				65D1E30921DFAC4E00FBA95D /* NavigationReducer.swift */,
+			);
+			path = Reducers;
+			sourceTree = "<group>";
+		};
+		65D1E2FC21DFA85100FBA95D /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				65D1E30721DFAA4200FBA95D /* Action.swift */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		65D1E2FD21DFA85100FBA95D /* States */ = {
+			isa = PBXGroup;
+			children = (
+				65D1E30121DFA85D00FBA95D /* AppState.swift */,
+				65D1E30321DFA8E200FBA95D /* NavigationState.swift */,
+			);
+			path = States;
+			sourceTree = "<group>";
+		};
+		65D1E2FE21DFA85100FBA95D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				65D1E30B21DFAE6D00FBA95D /* RootController.swift */,
+				65D1E30D21DFB29900FBA95D /* MainViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		65D1E2FF21DFA85100FBA95D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		65D1E30021DFA85100FBA95D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				653C66F921DFC5210096C3F3 /* Brand.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		78ACEE201EEE096982DD3A10 /* Frameworks */ = {
@@ -341,6 +427,7 @@
 			files = (
 				659601EA21DD15A3009780E5 /* LaunchScreen.storyboard in Resources */,
 				659601E721DD15A3009780E5 /* Assets.xcassets in Resources */,
+				653C66F121DFB8750096C3F3 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,8 +471,6 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Kingfisher.framework",
@@ -404,8 +489,6 @@
 				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SnapKit.framework",
 				"$(SRCROOT)//Carthage/Build/iOS/SwiftyJSON.framework",
-			);
-			outputFileListPaths = (
 			);
 			outputPaths = (
 			);
@@ -439,11 +522,13 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Carborn/Pods-Carborn-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -476,8 +561,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				659601E221DD15A2009780E5 /* ViewController.swift in Sources */,
+				65D1E30221DFA85D00FBA95D /* AppState.swift in Sources */,
+				653C66F621DFC2BE0096C3F3 /* BrandService.swift in Sources */,
+				653C66FA21DFC5210096C3F3 /* Brand.swift in Sources */,
+				653C66F821DFC37C0096C3F3 /* CarService.swift in Sources */,
+				65D1E30821DFAA4200FBA95D /* Action.swift in Sources */,
+				65D1E30421DFA8E200FBA95D /* NavigationState.swift in Sources */,
 				659601E021DD15A2009780E5 /* AppDelegate.swift in Sources */,
+				65D1E30621DFA97900FBA95D /* MainReducer.swift in Sources */,
+				65D1E30E21DFB29900FBA95D /* MainViewController.swift in Sources */,
+				65D1E30A21DFAC4E00FBA95D /* NavigationReducer.swift in Sources */,
+				65D1E30C21DFAE6D00FBA95D /* RootController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

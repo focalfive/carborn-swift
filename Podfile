@@ -7,6 +7,7 @@ target 'Carborn' do
 
   # Pods for Carborn
   pod 'Firebase/Core'
+  pod 'Firebase/Database'
 
   target 'CarbornTests' do
     inherit! :search_paths
