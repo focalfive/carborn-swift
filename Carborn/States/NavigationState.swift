@@ -12,6 +12,12 @@ enum NavigationPath {
     case root
 }
 
-struct NavigationState: StateType {
+struct NavigationState: StateType, Equatable {
     var path: NavigationPath
+}
+
+extension NavigationState {
+    static func ==(lhs: NavigationState, rhs: NavigationState) -> Bool {
+        return lhs.path == rhs.path
+    }
 }

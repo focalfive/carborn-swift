@@ -10,4 +10,6 @@ import ReSwift
 
 struct AppState: StateType {
     var navigationState: NavigationState
+    var carState: CarState
+    var menuState: MenuState
 }

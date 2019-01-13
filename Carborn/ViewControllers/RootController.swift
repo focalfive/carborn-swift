@@ -36,7 +36,7 @@ class RootController: UINavigationController, StoreSubscriber {
     }
     
     func newState(state: NavigationState) {
-        print("newState", state.path)
+        print("newState navi", state.path)
         switch state.path {
         case .root:
             popToRootViewController(animated: true)

@@ -7,13 +7,19 @@
 //
 
 import UIKit
+import RxSwift
 
 class MainViewController: UIViewController {
+    internal var bag = DisposeBag()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .red
+        view.backgroundColor = .black
         
-        BrandService.shared
+        MenuService.shared.get().subscribe {
+            print("Subscribe RX menu", $0.element)
+        }.disposed(by: bag)
+        
     }
     
 }

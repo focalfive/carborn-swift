@@ -8,10 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		51135A0237EAD6238D1F943E /* Pods_CarbornTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB9E04CB2DC47EA1FEA30FD7 /* Pods_CarbornTests.framework */; };
+		65253C8721E9043D00ACDCE2 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65253C8621E9043D00ACDCE2 /* Car.swift */; };
+		65253C8921E904ED00ACDCE2 /* CarReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65253C8821E904ED00ACDCE2 /* CarReducer.swift */; };
+		65253C8B21E9053D00ACDCE2 /* CarState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65253C8A21E9053D00ACDCE2 /* CarState.swift */; };
+		65253C8F21EA2C0300ACDCE2 /* MenuReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65253C8E21EA2C0300ACDCE2 /* MenuReducer.swift */; };
+		65253C9321EA2F1600ACDCE2 /* MenuState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65253C9221EA2F1600ACDCE2 /* MenuState.swift */; };
+		65253C9521EA300500ACDCE2 /* MenuService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65253C9421EA300500ACDCE2 /* MenuService.swift */; };
+		65253C9721EA36F400ACDCE2 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65253C9621EA36F400ACDCE2 /* Menu.swift */; };
 		653C66F121DFB8750096C3F3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 653C66F021DFB8740096C3F3 /* GoogleService-Info.plist */; };
-		653C66F621DFC2BE0096C3F3 /* BrandService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653C66F521DFC2BE0096C3F3 /* BrandService.swift */; };
 		653C66F821DFC37C0096C3F3 /* CarService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653C66F721DFC37C0096C3F3 /* CarService.swift */; };
-		653C66FA21DFC5210096C3F3 /* Brand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653C66F921DFC5210096C3F3 /* Brand.swift */; };
 		659601E021DD15A2009780E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659601DF21DD15A2009780E5 /* AppDelegate.swift */; };
 		659601E721DD15A3009780E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 659601E621DD15A3009780E5 /* Assets.xcassets */; };
 		659601EA21DD15A3009780E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 659601E821DD15A3009780E5 /* LaunchScreen.storyboard */; };
@@ -67,10 +72,15 @@
 		36FE33982ADFE3CA3AD1DDBA /* Pods-CarbornTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarbornTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CarbornTests/Pods-CarbornTests.debug.xcconfig"; sourceTree = "<group>"; };
 		41630127CB00C147EE816AF5 /* Pods_Carborn.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Carborn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		476D85F1072EA7B59B9ED831 /* Pods-CarbornUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarbornUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CarbornUITests/Pods-CarbornUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		65253C8621E9043D00ACDCE2 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		65253C8821E904ED00ACDCE2 /* CarReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarReducer.swift; sourceTree = "<group>"; };
+		65253C8A21E9053D00ACDCE2 /* CarState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarState.swift; sourceTree = "<group>"; };
+		65253C8E21EA2C0300ACDCE2 /* MenuReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuReducer.swift; sourceTree = "<group>"; };
+		65253C9221EA2F1600ACDCE2 /* MenuState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuState.swift; sourceTree = "<group>"; };
+		65253C9421EA300500ACDCE2 /* MenuService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuService.swift; sourceTree = "<group>"; };
+		65253C9621EA36F400ACDCE2 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		653C66F021DFB8740096C3F3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		653C66F521DFC2BE0096C3F3 /* BrandService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandService.swift; sourceTree = "<group>"; };
 		653C66F721DFC37C0096C3F3 /* CarService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarService.swift; sourceTree = "<group>"; };
-		653C66F921DFC5210096C3F3 /* Brand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brand.swift; sourceTree = "<group>"; };
 		659601DC21DD15A2009780E5 /* Carborn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Carborn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		659601DF21DD15A2009780E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		659601E621DD15A3009780E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -161,8 +171,8 @@
 		653C66F221DFBC0C0096C3F3 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				653C66F521DFC2BE0096C3F3 /* BrandService.swift */,
 				653C66F721DFC37C0096C3F3 /* CarService.swift */,
+				65253C9421EA300500ACDCE2 /* MenuService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -231,6 +241,8 @@
 			children = (
 				65D1E30521DFA97900FBA95D /* MainReducer.swift */,
 				65D1E30921DFAC4E00FBA95D /* NavigationReducer.swift */,
+				65253C8821E904ED00ACDCE2 /* CarReducer.swift */,
+				65253C8E21EA2C0300ACDCE2 /* MenuReducer.swift */,
 			);
 			path = Reducers;
 			sourceTree = "<group>";
@@ -248,6 +260,8 @@
 			children = (
 				65D1E30121DFA85D00FBA95D /* AppState.swift */,
 				65D1E30321DFA8E200FBA95D /* NavigationState.swift */,
+				65253C8A21E9053D00ACDCE2 /* CarState.swift */,
+				65253C9221EA2F1600ACDCE2 /* MenuState.swift */,
 			);
 			path = States;
 			sourceTree = "<group>";
@@ -271,7 +285,8 @@
 		65D1E30021DFA85100FBA95D /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				653C66F921DFC5210096C3F3 /* Brand.swift */,
+				65253C8621E9043D00ACDCE2 /* Car.swift */,
+				65253C9621EA36F400ACDCE2 /* Menu.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -561,16 +576,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65253C8B21E9053D00ACDCE2 /* CarState.swift in Sources */,
 				65D1E30221DFA85D00FBA95D /* AppState.swift in Sources */,
-				653C66F621DFC2BE0096C3F3 /* BrandService.swift in Sources */,
-				653C66FA21DFC5210096C3F3 /* Brand.swift in Sources */,
 				653C66F821DFC37C0096C3F3 /* CarService.swift in Sources */,
 				65D1E30821DFAA4200FBA95D /* Action.swift in Sources */,
 				65D1E30421DFA8E200FBA95D /* NavigationState.swift in Sources */,
 				659601E021DD15A2009780E5 /* AppDelegate.swift in Sources */,
 				65D1E30621DFA97900FBA95D /* MainReducer.swift in Sources */,
+				65253C8921E904ED00ACDCE2 /* CarReducer.swift in Sources */,
+				65253C9521EA300500ACDCE2 /* MenuService.swift in Sources */,
 				65D1E30E21DFB29900FBA95D /* MainViewController.swift in Sources */,
+				65253C9721EA36F400ACDCE2 /* Menu.swift in Sources */,
 				65D1E30A21DFAC4E00FBA95D /* NavigationReducer.swift in Sources */,
+				65253C8F21EA2C0300ACDCE2 /* MenuReducer.swift in Sources */,
+				65253C8721E9043D00ACDCE2 /* Car.swift in Sources */,
+				65253C9321EA2F1600ACDCE2 /* MenuState.swift in Sources */,
 				65D1E30C21DFAE6D00FBA95D /* RootController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

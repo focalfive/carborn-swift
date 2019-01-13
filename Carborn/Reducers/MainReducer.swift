@@ -10,6 +10,8 @@ import ReSwift
 
 func mainReducer(action: Action, state: AppState?) -> AppState {
     return AppState(
-        navigationState: navigationReducer(action: action, state: state?.navigationState)
+        navigationState: navigationReducer(action: action, state: state?.navigationState),
+        carState: carReducer(action: action, state: state?.carState),
+        menuState: menuReducer(action: action, state: state?.menuState)
     )
 }

@@ -11,3 +11,11 @@ import ReSwift
 struct NavigationAction: Action {
     let path: NavigationPath
 }
+
+struct CarActionUpdated: Action {
+    let collection: [Car]
+}
+
+struct MenuAction: Action {
+    let menu: [String]
+}
