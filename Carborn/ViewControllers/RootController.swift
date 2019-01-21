@@ -12,6 +12,8 @@ import ReSwift
 class RootController: UINavigationController, StoreSubscriber {
     typealias StoreSubscriberStateType = NavigationState
     
+    private var navigationStack: [(path: NavigationPath, value: String?)] = [(path: .root, value: nil)]
+    
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -33,6 +35,18 @@ class RootController: UINavigationController, StoreSubscriber {
                 $0.navigationState
             }
         }
+        
+        _ = rx.didShow.bind { (viewController, animated) in
+            print("RootController didShow", viewController)
+            switch viewController {
+            case _ as MainViewController:
+                mainStore.dispatch(NavigationAction(path: .root))
+            case let viewController as BrandViewController:
+                mainStore.dispatch(NavigationAction(path: .brand, value: viewController.brandName))
+            default:
+                break
+            }
+        }
     }
     
     func newState(state: NavigationState) {
@@ -40,6 +54,13 @@ class RootController: UINavigationController, StoreSubscriber {
         switch state.path {
         case .root:
             popToRootViewController(animated: true)
+        case .brand:
+            guard let brandName = state.value else {
+                return
+            }
+            pushViewController(BrandViewController(brandName), animated: true)
+        case .car:
+            print("navigate to car", state.path)
         }
     }
     

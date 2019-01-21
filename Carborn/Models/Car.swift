@@ -13,6 +13,7 @@ struct Car: Mappable {
     let id: String = UUID().uuidString
     var name: String = ""
     var brand: String = ""
+    var model: String?
     
     init?(map: Map) {
         
@@ -21,6 +22,7 @@ struct Car: Mappable {
     mutating func mapping(map: Map) {
         name <- map["display_name"]
         brand <- map["brand"]
+        model <- map["model"]
     }
 }
 

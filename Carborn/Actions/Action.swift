@@ -10,6 +10,12 @@ import ReSwift
 
 struct NavigationAction: Action {
     let path: NavigationPath
+    let value: String?
+    
+    init(path: NavigationPath, value: String? = nil) {
+        self.path = path
+        self.value = value
+    }
 }
 
 struct CarActionUpdated: Action {

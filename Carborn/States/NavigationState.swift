@@ -10,14 +10,20 @@ import ReSwift
 
 enum NavigationPath {
     case root
+    case brand
+    case car
 }
 
 struct NavigationState: StateType, Equatable {
     var path: NavigationPath
+    var value: String?
+    init() {
+        path = .root
+    }
 }
 
 extension NavigationState {
     static func ==(lhs: NavigationState, rhs: NavigationState) -> Bool {
-        return lhs.path == rhs.path
+        return lhs.path == rhs.path && lhs.value == rhs.value
     }
 }

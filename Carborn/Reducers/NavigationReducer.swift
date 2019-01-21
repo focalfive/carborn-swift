@@ -9,11 +9,12 @@
 import ReSwift
 
 func navigationReducer(action: Action, state: NavigationState?) -> NavigationState {
-    var state = state ?? NavigationState(path: .root)
+    var state = state ?? NavigationState()
     
     switch action {
     case let action as NavigationAction:
         state.path = action.path
+        state.value = action.value
     default:
         break
     }

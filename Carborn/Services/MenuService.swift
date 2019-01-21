@@ -49,7 +49,7 @@ class MenuService: StoreSubscriber {
     }
     
     internal func createMenu() {
-        print("createMenu", cars, menu)
+//        print("createMenu", cars, menu)
         guard let cars = cars, cars.count > 0, let menu = menu, menu.count > 0 else {
             return
         }

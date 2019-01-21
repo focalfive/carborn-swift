@@ -15,6 +15,9 @@
 		65253C9321EA2F1600ACDCE2 /* MenuState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65253C9221EA2F1600ACDCE2 /* MenuState.swift */; };
 		65253C9521EA300500ACDCE2 /* MenuService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65253C9421EA300500ACDCE2 /* MenuService.swift */; };
 		65253C9721EA36F400ACDCE2 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65253C9621EA36F400ACDCE2 /* Menu.swift */; };
+		65253C9921F2154700ACDCE2 /* BrandViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65253C9821F2154700ACDCE2 /* BrandViewController.swift */; };
+		65253C9B21F373FA00ACDCE2 /* CarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65253C9A21F373FA00ACDCE2 /* CarModel.swift */; };
+		65253C9D21F5F95C00ACDCE2 /* CarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65253C9C21F5F95C00ACDCE2 /* CarViewController.swift */; };
 		653C66F121DFB8750096C3F3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 653C66F021DFB8740096C3F3 /* GoogleService-Info.plist */; };
 		653C66F821DFC37C0096C3F3 /* CarService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653C66F721DFC37C0096C3F3 /* CarService.swift */; };
 		659601E021DD15A2009780E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659601DF21DD15A2009780E5 /* AppDelegate.swift */; };
@@ -79,6 +82,9 @@
 		65253C9221EA2F1600ACDCE2 /* MenuState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuState.swift; sourceTree = "<group>"; };
 		65253C9421EA300500ACDCE2 /* MenuService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuService.swift; sourceTree = "<group>"; };
 		65253C9621EA36F400ACDCE2 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		65253C9821F2154700ACDCE2 /* BrandViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandViewController.swift; sourceTree = "<group>"; };
+		65253C9A21F373FA00ACDCE2 /* CarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarModel.swift; sourceTree = "<group>"; };
+		65253C9C21F5F95C00ACDCE2 /* CarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarViewController.swift; sourceTree = "<group>"; };
 		653C66F021DFB8740096C3F3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		653C66F721DFC37C0096C3F3 /* CarService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarService.swift; sourceTree = "<group>"; };
 		659601DC21DD15A2009780E5 /* Carborn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Carborn.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -271,6 +277,8 @@
 			children = (
 				65D1E30B21DFAE6D00FBA95D /* RootController.swift */,
 				65D1E30D21DFB29900FBA95D /* MainViewController.swift */,
+				65253C9821F2154700ACDCE2 /* BrandViewController.swift */,
+				65253C9C21F5F95C00ACDCE2 /* CarViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -287,6 +295,7 @@
 			children = (
 				65253C8621E9043D00ACDCE2 /* Car.swift */,
 				65253C9621EA36F400ACDCE2 /* Menu.swift */,
+				65253C9A21F373FA00ACDCE2 /* CarModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -583,6 +592,7 @@
 				65D1E30421DFA8E200FBA95D /* NavigationState.swift in Sources */,
 				659601E021DD15A2009780E5 /* AppDelegate.swift in Sources */,
 				65D1E30621DFA97900FBA95D /* MainReducer.swift in Sources */,
+				65253C9D21F5F95C00ACDCE2 /* CarViewController.swift in Sources */,
 				65253C8921E904ED00ACDCE2 /* CarReducer.swift in Sources */,
 				65253C9521EA300500ACDCE2 /* MenuService.swift in Sources */,
 				65D1E30E21DFB29900FBA95D /* MainViewController.swift in Sources */,
@@ -590,6 +600,8 @@
 				65D1E30A21DFAC4E00FBA95D /* NavigationReducer.swift in Sources */,
 				65253C8F21EA2C0300ACDCE2 /* MenuReducer.swift in Sources */,
 				65253C8721E9043D00ACDCE2 /* Car.swift in Sources */,
+				65253C9B21F373FA00ACDCE2 /* CarModel.swift in Sources */,
+				65253C9921F2154700ACDCE2 /* BrandViewController.swift in Sources */,
 				65253C9321EA2F1600ACDCE2 /* MenuState.swift in Sources */,
 				65D1E30C21DFAE6D00FBA95D /* RootController.swift in Sources */,
 			);
